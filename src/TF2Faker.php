@@ -371,7 +371,11 @@ class TF2Faker extends Base
 
     private function classSlotWeapons(string $class, string $slot)
     {
+        $class = strtolower($class);
+        $slot = strtolower($slot);
+
         $propertyName = strtolower($class).'Slots';
+
         if (property_exists($this, $propertyName)) {
             $weapons = static::${$propertyName}[strtolower($slot)] ?? null;
             if ($weapons) {
