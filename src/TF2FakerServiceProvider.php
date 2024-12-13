@@ -1,12 +1,13 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace cheddzy\TF2Faker;
 
+use Faker\Generator;
+use Illuminate\Support\Facades\App;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class TF2FakerServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +17,7 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->name('tf2-faker');
+        App::make(Generator::class)->addProvider(new TF2Faker(App::make(Generator::class)));
     }
 }
