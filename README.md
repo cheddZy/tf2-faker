@@ -19,6 +19,11 @@ Provided for each TF2 class is a method to return a random weapon string in a fa
 ```php
 $this->faker->scoutWeapon();
 ```
+You can also specify a class and class + slot:
+```php
+$this->faker->classWeapon('heavy');
+$this->faker->classWeaponSlot('engineer', 'pda');
+```
 As well as for specific slots per class:
 ```php
 $this->faker->spyPrimary();
@@ -28,6 +33,8 @@ $this->faker->spyWatch();
 $this->faker->spySapper();
 ```
 These exist for all 9 classes.
+
+**NOTE:** Keep in mind spy is the only one with a Watch and Sapper slot, and Engineer and Spy are the only ones with a PDA slot!
 
 ## Changelog
 
