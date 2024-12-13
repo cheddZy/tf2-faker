@@ -5,6 +5,14 @@ namespace cheddzy\TF2Faker;
 use Faker\Provider\Base;
 use InvalidArgumentException;
 
+
+/**
+ * Team Fortress 2 Weapon Faker, made with Laravel Factories in mind.
+ *
+ * @package cheddzy/tf2-faker
+ * @see <a href="https://wiki.teamfortress.com/wiki">TF2 Wiki</a>
+ * @see <a href="https://github.com/cheddZy/tf2-faker">Repo</a>
+ */
 class TF2Faker extends Base
 {
     protected static array $qualities = [
@@ -375,9 +383,30 @@ class TF2Faker extends Base
     }
 
     /**
+     * @param "scout"|"soldier"|"pyro"|"demoman"|"heavy"|"engineer"|"medic"|"sniper"|"spy" $className Team Fortress 2 Class Name
+     * @return string
+     */
+    public function classWeapon(string $className): string
+    {
+        return $this->classWeapons($className);
+    }
+
+    /**
+     *
+     * @param "scout"|"soldier"|"pyro"|"demoman"|"heavy"|"engineer"|"medic"|"sniper"|"spy" $className Team Fortress 2 Class Name
+     * @param "primary"|"secondary"|"melee"|"pda"|"sapper"|"watch" $slot Class Weapon Slot (e.g. primary, secondary, melee)
+     * @return string
+     */
+    public function classWeaponSlot(string $className, string $slot): string
+    {
+        return $this->classSlotWeapons($className, $slot);
+    }
+
+    /**
      * <h4>Scout Weapons</h4>
      * Returns weapons for Scout.
      */
+
     public function scoutWeapon(): string
     {
         return $this->classWeapons('scout');
