@@ -2,7 +2,7 @@
     "name": "cheddzy/tf2-faker",
     "description": "Team Fortress 2 Weapon Faker, made with Laravel Factories in mind.",
     "keywords": [
-        "Shachar MW",
+        "cheddZy",
         "laravel",
         "tf2-faker"
     ],
@@ -12,6 +12,11 @@
         {
             "name": "Shachar MW",
             "email": "artcheddzy@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Moonly Days",
+            "email": "moonlydays1@gmail.com",
             "role": "Developer"
         }
     ],

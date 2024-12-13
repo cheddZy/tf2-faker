@@ -378,7 +378,7 @@ class TF2Faker extends Base
      * <h4>Scout Weapons</h4>
      * Returns weapons for Scout.
      */
-    public function scoutWeapons(): string
+    public function scoutWeapon(): string
     {
         return $this->classWeapons('scout');
     }
@@ -402,7 +402,7 @@ class TF2Faker extends Base
      * <h4>Soldier Weapons</h4>
      * Returns weapons for Soldier.
      */
-    public function soldierWeapons(): string
+    public function soldierWeapon(): string
     {
         return $this->classWeapons('soldier');
     }
@@ -426,7 +426,7 @@ class TF2Faker extends Base
      * <h4>Pyro Weapons</h4>
      * Returns weapons for Pyro.
      */
-    public function pyroWeapons(): string
+    public function pyroWeapon(): string
     {
         return $this->classWeapons('pyro');
     }
@@ -450,7 +450,7 @@ class TF2Faker extends Base
      * <h4>Demoman Weapons</h4>
      * Returns weapons for Demoman.
      */
-    public function demomanWeapons(): string
+    public function demomanWeapon(): string
     {
         return $this->classWeapons('demoman');
     }
@@ -474,7 +474,7 @@ class TF2Faker extends Base
      * <h4>Heavy Weapons</h4>
      * Returns weapons for Heavy.
      */
-    public function heavyWeapons(): string
+    public function heavyWeapon(): string
     {
         return $this->classWeapons('heavy');
     }
@@ -498,7 +498,7 @@ class TF2Faker extends Base
      * <h4>Engineer Weapons</h4>
      * Returns weapons for Engineer.
      */
-    public function engineerWeapons(): string
+    public function engineerWeapon(): string
     {
         return $this->classWeapons('engineer');
     }
@@ -527,7 +527,7 @@ class TF2Faker extends Base
      * <h4>Medic Weapons</h4>
      * Returns weapons for Medic.
      */
-    public function medicWeapons(): string
+    public function medicWeapon(): string
     {
         return $this->classWeapons('medic');
     }
@@ -551,7 +551,7 @@ class TF2Faker extends Base
      * <h4>Sniper Weapons</h4>
      * Returns weapons for Sniper.
      */
-    public function sniperWeapons(): string
+    public function sniperWeapon(): string
     {
         return $this->classWeapons('sniper');
     }
@@ -575,7 +575,7 @@ class TF2Faker extends Base
      * <h4>Spy Weapons</h4>
      * Returns weapons for Spy.
      */
-    public function spyWeapons(): string
+    public function spyWeapon(): string
     {
         return $this->classWeapons('spy');
     }
