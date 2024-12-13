@@ -1,6 +1,6 @@
 {
     "name": "cheddzy/tf2-faker",
-    "description": "This is my package tf2-faker",
+    "description": "Team Fortress 2 Weapon Faker, made with Laravel Factories in mind.",
     "keywords": [
         "Shachar MW",
         "laravel",
